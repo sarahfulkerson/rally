@@ -24,6 +24,7 @@ body {
     padding: 40px 32px;
     max-width: 800px;
     margin: 0 auto;
+    overflow-y: scroll; /* Always show scrollbar to prevent layout shift */
 }
 h2 {
     font-size: 1.5rem;
@@ -283,6 +284,14 @@ h2 {
 }
 
 .empty-state {
+    text-align: center;
+    padding: 64px 32px;
+    color: var(--medium-gray);
+    font-style: italic;
+    border: 1px solid var(--pale-gray);
+}
+
+.loading-state {
     text-align: center;
     padding: 64px 32px;
     color: var(--medium-gray);
